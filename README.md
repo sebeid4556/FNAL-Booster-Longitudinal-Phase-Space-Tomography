@@ -3,22 +3,16 @@
 
 
 ## Description
-Code to reconstruct the longitudinal phase space distribution of an arbitrary Booster bunch from a Wall Current Monitor (WCM) measurement arranged into a sinogram.
+Code to reconstruct the longitudinal phase space distribution of an arbitrary Booster bunch from a Wall Current Monitor (WCM) measurement.
 
-## Figures
-![Alt text](figures/wcm_t3ms_b03_v1pad.png)
-![Alt text](figures/Sinogram_wcm_t3ms_b03_v1pad.png)
+## Usage
+Download & place all files into a folder named 'booster_tomography', then import into your code as shown in the examples below. 
+
 
 ## Input Data Format
 The code expects the input sinograms to be .CSV files centered on the synchronous phase of the bunch. Each row should represent a turn and each column a .2ns WCM measurement. The sinogram should at least span the full width of stable region.
 
-Examples (CSV visualized):
-![Alt text](figures/sinogram_t3ms_b03_v1pad.png)
-![Alt text](figures/sinogram_t30ms_b57_v1pad.png)
-
 ## Examples
-
-See the [example notebook](docs/examples.ipynb)
 
 ### Reconstruct a single bunch
 
